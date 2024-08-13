@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Listmusic"
+    android:orientation="vertical"
+
+    >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Danh sách bài hát"
+        android:textSize="40sp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textColor="#E61412"
+        android:background="#03DAC5"
+        >
+
+    </TextView>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Nhập tên bài hát"
+        android:id="@+id/edtmusic"
+        >
+
+
+    </EditText>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Nhập tên tác giả"
+        android:id="@+id/edtauthor"
+        >
+
+    </EditText>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="horizontal"
+
+        >
+        <Button
+            android:layout_width="120dp"
+            android:layout_height="60dp"
+            android:text="Thêm"
+            android:id="@+id/add"
+            android:textSize="30sp"
+            android:backgroundTint="#03A9F4"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dp"
+            >
+
+        </Button>
+        <Button
+            android:layout_width="120dp"
+            android:layout_height="60dp"
+            android:text="Sửa"
+            android:id="@+id/edit"
+            android:textSize="30sp"
+            android:backgroundTint="#03A9F4"
+            android:layout_gravity="center"
+            android:layout_marginLeft="5dp"
+            >
+
+        </Button>
+        <Button
+            android:layout_width="120dp"
+            android:layout_height="60dp"
+            android:text="Xóa"
+            android:id="@+id/delete"
+            android:textSize="30sp"
+            android:backgroundTint="#03A9F4"
+            android:layout_gravity="center"
+            android:layout_marginLeft="5dp"
+            >
+
+        </Button>
+    </LinearLayout>
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/listmusic"
+        android:background="#EBFF3B"
+        >
+
+    </ListView>
+</LinearLayout>
